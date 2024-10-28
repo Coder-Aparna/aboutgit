@@ -11,8 +11,13 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text("Welcom To My Page",style: TextStyle(fontSize: 40,color: Colors.red),),
+      body: Column(
+        children: [
+          Center(
+            child: Text("Welcom To My Page",style: TextStyle(fontSize: 40,color: Colors.red),),
+          ),
+          ElevatedButton(onPressed: (){}, child: Text("submit"))
+        ],
       ),
     );
   }
